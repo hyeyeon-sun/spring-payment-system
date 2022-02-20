@@ -8,15 +8,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="user" />
+        <module name="payment" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-payment-system" target="11" />
-      <module name="user" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="payment" options="-parameters" />
       <module name="spring-payment-system" options="-parameters" />
       <module name="user" options="-parameters" />
     </option>
